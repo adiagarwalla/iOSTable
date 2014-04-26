@@ -28,6 +28,7 @@
 		669B1A0A190C45160016E89A /* img4.png in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A04190C45160016E89A /* img4.png */; };
 		669B1A0B190C45160016E89A /* img5.png in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A05190C45160016E89A /* img5.png */; };
 		669B1A0C190C45160016E89A /* img6.png in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A06190C45160016E89A /* img6.png */; };
+		669B1A0E190C569B0016E89A /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A0D190C569B0016E89A /* SimpleTableCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		669B1A04190C45160016E89A /* img4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img4.png; sourceTree = "<group>"; };
 		669B1A05190C45160016E89A /* img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img5.png; sourceTree = "<group>"; };
 		669B1A06190C45160016E89A /* img6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img6.png; sourceTree = "<group>"; };
+		669B1A0D190C569B0016E89A /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				669B19E0190C33170016E89A /* SimpleTableViewController.m */,
 				669B19E2190C33170016E89A /* Images.xcassets */,
 				669B19D1190C33170016E89A /* Supporting Files */,
+				669B1A0D190C569B0016E89A /* SimpleTableCell.xib */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				669B1A00190C3B750016E89A /* dogesmall.jpg in Resources */,
 				669B1A07190C45160016E89A /* img1.png in Resources */,
 				669B1A0B190C45160016E89A /* img5.png in Resources */,
+				669B1A0E190C569B0016E89A /* SimpleTableCell.xib in Resources */,
 				669B1A08190C45160016E89A /* img2.png in Resources */,
 				669B1A09190C45160016E89A /* img3.png in Resources */,
 				669B1A0A190C45160016E89A /* img4.png in Resources */,
