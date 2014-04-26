@@ -21,6 +21,7 @@
 		669B19EC190C33170016E89A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669B19CE190C33170016E89A /* UIKit.framework */; };
 		669B19F4190C33170016E89A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 669B19F2190C33170016E89A /* InfoPlist.strings */; };
 		669B19F6190C33170016E89A /* SimpleTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 669B19F5190C33170016E89A /* SimpleTableTests.m */; };
+		669B1A00190C3B750016E89A /* dogesmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 669B19FF190C3B750016E89A /* dogesmall.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		669B19F1190C33170016E89A /* SimpleTableTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTableTests-Info.plist"; sourceTree = "<group>"; };
 		669B19F3190C33170016E89A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		669B19F5190C33170016E89A /* SimpleTableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTableTests.m; sourceTree = "<group>"; };
+		669B19FF190C3B750016E89A /* dogesmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dogesmall.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		669B19D0190C33170016E89A /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				669B19FF190C3B750016E89A /* dogesmall.jpg */,
 				669B19D9190C33170016E89A /* SimpleTableAppDelegate.h */,
 				669B19DA190C33170016E89A /* SimpleTableAppDelegate.m */,
 				669B19DC190C33170016E89A /* Main.storyboard */,
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669B1A00190C3B750016E89A /* dogesmall.jpg in Resources */,
 				669B19E3190C33170016E89A /* Images.xcassets in Resources */,
 				669B19D5190C33170016E89A /* InfoPlist.strings in Resources */,
 				669B19DE190C33170016E89A /* Main.storyboard in Resources */,
