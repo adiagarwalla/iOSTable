@@ -7,6 +7,7 @@
 //
 
 #import "SimpleTableViewController.h"
+#import "SimpleTableCell.h"
 
 @interface SimpleTableViewController ()
 
@@ -16,6 +17,7 @@
 {
     NSArray *tableData;
     NSArray *thumbnails;
+    NSArray *durationTime;
 }
 
 - (void)viewDidLoad
@@ -25,6 +27,7 @@
     tableData = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", nil];
     
     thumbnails = [NSArray arrayWithObjects:@"img1.png", @"img2.png", @"img3.png", @"img4.png", nil];
+    durationTime = [NSArray arrayWithObjects:@"12", @"14", @"15", @"16", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,16 +44,27 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
     }
     
-    cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    //if (cell == nil) {
+    //    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+    //}
+    
+    cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
+    cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
+    cell.DurationTimeLabel.text = [durationTime objectAtIndex:indexPath.row];
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 78;
 }
 
 @end

@@ -29,6 +29,7 @@
 		669B1A0B190C45160016E89A /* img5.png in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A05190C45160016E89A /* img5.png */; };
 		669B1A0C190C45160016E89A /* img6.png in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A06190C45160016E89A /* img6.png */; };
 		669B1A0E190C569B0016E89A /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669B1A0D190C569B0016E89A /* SimpleTableCell.xib */; };
+		669B1A11190C58F20016E89A /* SimpleTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 669B1A10190C58F20016E89A /* SimpleTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		669B1A05190C45160016E89A /* img5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img5.png; sourceTree = "<group>"; };
 		669B1A06190C45160016E89A /* img6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img6.png; sourceTree = "<group>"; };
 		669B1A0D190C569B0016E89A /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		669B1A0F190C58F20016E89A /* SimpleTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleTableCell.h; sourceTree = "<group>"; };
+		669B1A10190C58F20016E89A /* SimpleTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,8 @@
 				669B19E2190C33170016E89A /* Images.xcassets */,
 				669B19D1190C33170016E89A /* Supporting Files */,
 				669B1A0D190C569B0016E89A /* SimpleTableCell.xib */,
+				669B1A0F190C58F20016E89A /* SimpleTableCell.h */,
+				669B1A10190C58F20016E89A /* SimpleTableCell.m */,
 			);
 			path = SimpleTable;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 			files = (
 				669B19D7190C33170016E89A /* main.m in Sources */,
 				669B19DB190C33170016E89A /* SimpleTableAppDelegate.m in Sources */,
+				669B1A11190C58F20016E89A /* SimpleTableCell.m in Sources */,
 				669B19E1190C33170016E89A /* SimpleTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
