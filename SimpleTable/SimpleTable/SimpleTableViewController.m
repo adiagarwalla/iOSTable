@@ -15,6 +15,7 @@
 @implementation SimpleTableViewController
 {
     NSArray *tableData;
+    NSArray *thumbnails;
 }
 
 - (void)viewDidLoad
@@ -22,6 +23,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     tableData = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", nil];
+    
+    thumbnails = [NSArray arrayWithObjects:@"img1.png", @"img2.png", @"img3.png", @"img4.png", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -46,7 +49,7 @@
     }
     
     cell.textLabel.text = [tableData objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"dogesmall.jpg"];
+    cell.imageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
     return cell;
 }
 
