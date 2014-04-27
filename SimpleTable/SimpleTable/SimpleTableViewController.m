@@ -24,10 +24,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    tableData = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", nil];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"recipes" ofType:@"plist"];
     
-    thumbnails = [NSArray arrayWithObjects:@"img1.png", @"img2.png", @"img3.png", @"img4.png", nil];
-    durationTime = [NSArray arrayWithObjects:@"12", @"14", @"15", @"16", nil];
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    tableData = [dict objectForKey:@"RecipeName"];
+    thumbnails = [dict objectForKey:@"Thumbnail"];
+    durationTime = [dict objectForKey:@"DurationTime"];
+    
+//    tableData = [NSArray arrayWithObjects:@"A", @"B", @"C", @"D", nil];
+//    thumbnails = [NSArray arrayWithObjects:@"img1.png", @"img2.png", @"img3.png", @"img4.png", nil];
+//    durationTime = [NSArray arrayWithObjects:@"12", @"14", @"15", @"16", nil];
 }
 
 - (void)didReceiveMemoryWarning
